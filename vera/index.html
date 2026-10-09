@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera: a voice companion for an older parent</title>
+<meta name="description" content="Vera is an AI companion for an older parent living alone. The parent talks to a tablet; Vera answers out loud about the day, the medicines and the people in their life, and tells the family when something is wrong.">
+<meta property="og:title" content="Vera: a voice companion for an older parent">
+<meta property="og:description" content="Touch the tablet and talk. Vera answers out loud, prompts each dose, and emails the family when a dose is missed or she hears &quot;I fell&quot;.">
+<meta property="og:image" content="https://alvinekelund.com/vera/icon-512.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#fbf8f3; --ink:#1f2a2e; --muted:#5b6669; --accent:#1c8a7d; --card:#ffffff; --line:#e6e0d6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121718; --ink:#eef2f1; --muted:#a3adad; --accent:#3cb5a5; --card:#1b2224; --line:#2b3437; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:48px 20px 64px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:56px; height:56px; border-radius:14px; }
+  header span { font-size:28px; font-weight:700; letter-spacing:-.01em; }
+  h1 { font-size:clamp(30px, 6vw, 46px); line-height:1.15; margin:40px 0 16px; letter-spacing:-.02em; }
+  .lede { font-size:21px; color:var(--muted); margin:0 0 32px; max-width:640px; }
+  h2 { font-size:24px; margin:48px 0 12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .card b { display:block; font-size:19px; margin-bottom:6px; }
+  .card p { margin:0; color:var(--muted); font-size:16px; }
+  .quote { border-left:4px solid var(--accent); padding:4px 0 4px 16px; margin:12px 0; }
+  ul { padding-left:22px; } li { margin:6px 0; }
+  .status { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 24px; }
+  a { color:var(--accent); }
+  footer { margin-top:56px; color:var(--muted); font-size:15px; border-top:1px solid var(--line); padding-top:20px; }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon.svg" alt=""><span>Vera</span></header>
+
+  <h1>A voice companion for an older parent living alone.</h1>
+  <p class="lede">The parent touches the tablet and talks. Vera answers out loud, in English or Swedish, about
+  the day, the medicines and the people in their life, and tells the family when something is wrong.</p>
+
+  <h2>What Vera does</h2>
+  <div class="grid">
+    <div class="card"><b>Answers out loud</b><p>"What day is it?" "Have I taken my pills?" "Who is Anna?" One spoken answer with large subtitles and at most one picture card.</p></div>
+    <div class="card"><b>Prompts each dose</b><p>A spoken reminder at medicine time, repeated once. A missed dose emails the family.</p></div>
+    <div class="card"><b>Hears an emergency</b><p>"I fell", "I can't breathe", "there's smoke": Vera says the emergency number, shows who to call, and the family is emailed within minutes, quoting the words.</p></div>
+    <div class="card"><b>Says no to scams</b><p>Requests for money, card numbers or codes get "give nothing", the caregiver's card, and an alert to the family.</p></div>
+    <div class="card"><b>Never gives medicine advice</b><p>Vera never tells anyone to change, skip or catch up a dose. That stays with the family and the doctor.</p></div>
+    <div class="card"><b>A page for the family</b><p>The family sets up people, medicines, a shared calendar and the emergency number, and sees each alert.</p></div>
+  </div>
+
+  <h2>Built for the person using it</h2>
+  <ul>
+    <li>The whole screen is the button: "Touch anywhere and talk to me". No menus, no icons to learn.</li>
+    <li>The day, time and date are always on screen.</li>
+    <li>Vera is a soft, round character, clearly not a person, who looks at the one card she is talking about.</li>
+    <li>Everything returns to a calm resting screen on its own.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Each household's data is separate. What the family sees is shared only with the parent's consent, the family
+  can download or delete everything from their page, and old records are purged automatically.</p>
+
+  <h2>Where it stands</h2>
+  <div class="status">
+    <p style="margin:0">Vera runs end to end in the browser today against a real test backend, with 214 automated tests, including 39 safety
+    scenarios. It is not yet in use by a household: hosting and the first family pilots come next.</p>
+  </div>
+
+  <footer>
+    Built by <a href="https://alvinekelund.com">Alvin Ekelund</a>, Harvard S.M. Data Science.
+    Contact: <a href="mailto:alvin.ekelund@gmail.com">alvin.ekelund@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
